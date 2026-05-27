@@ -49,8 +49,6 @@ VertexList Graph::edges_from(Vertex vertex) const{
     for (const Edge& e : *this){
 		if (e.u == vertex){
 			neighbors.push_back(e.v);
-		} else if (e.v == vertex){
-            neighbors.push_back(e.u);
 		}
     }
     return neighbors;
